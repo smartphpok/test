@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/home.css" />
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/login.css" />
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/reset.css"/>
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/nav.css"/>
+  <script src="__PUBLIC__/jquery/jquery-1.11.3.js"></script>
+  <style>
+			#m{
+				width:1000px;
+				height: 500px;
+				margin:0 auto;
+			}
+			#left{
+				float:left;
+				margin-right: 100px;
+			}
+			#right table{
+				text-align: center;
+			}
+			#buy{
+				float: left;
+				margin-right: 50px;
+				width: 80px;
+				height: 30px;
+				
+				text-align: center;
+				line-height: 30px;
+			}
+			#buybox{
+				float: right;
+				margin-right: 220px;
+				width: 90px;
+				height: 30px;
+				/*background-color: yellow;*/
+				text-align: center;
+				line-height: 30px;
+			}
+			#top{
+				height: 100px;
+				line-height: 160px;
+				
+			}
+		</style>
+ </head>
+ <body>
+  <!-- header -->
+  <include file="Public/Home/tpl/nav.html"/>
+  <!--<include file='Public/Home/tpl/header.html'/>-->
+  <div id="header" class="clear">
+	   <div class="lf">
+	       <img src="__PUBLIC__/Home/images/ls_logonew.png" alt=""/>
+	       <span style="color: #3094EC;">商品详情</span>
+	   </div>
+	   <div class="ri_logo">
+		   <ul>
+		     <li><b></b>即买即卖</li>
+		     <li><b></b>优质供货</li>
+		     <li><b></b>最惠采购</li>
+		   </ul>
+	   </div>
+  </div>
+  <!-- section -->
+  <div id="m">
+			<div id="top">
+				
+				<a href="__APP__/Home/Index/index">首页</a> |
+				<a href="__APP__/Home/Spxx/splb">商品列表页</a> |
+				<if condition="$_SESSION['username']">
+				<a href="__APP__/Home/Personal/index">个人中心</a>
+				<else/>
+				<a href="__APP__/Home/Login/login">账号登陆</a>
+				</if>
+			</div>
+		<div id="left">
+			<img src="__PUBLIC__/{$arr.pic}"/>
+		</div>
+		<div id="right">
+			<h1 style="color:blue;">{$arr.spname}</h1><br />
+			<table border="0" cellspacing="" cellpadding="">
+				<tr>
+					<td>商品型号&nbsp;：&nbsp;&nbsp;</td>
+					<td>套装裙</td>
+				</tr>
+				<tr>
+					<td>商品单价&nbsp;：&nbsp;&nbsp;</td>
+					<td>￥{$arr.price}</td>
+				</tr>
+			</table>
+			<br /><br />
+			<div id="buy">
+				<input type="button" name="" id="shou" value="立即购买" />
+			</div>
+			<div id="buybox">
+				<input type="button" name="" id="buu" value="加入购物车" />
+			</div>
+		</div>
+	</div>
+	<include file="Public/Home/tpl/footer.html"/>
+	<input type="hidden" name="hid" id="hid" value="{$arr.pid}" />
+	<script type="text/javascript">
+		var ob = document.getElementById('hid');
+		var idd = ob.value;
+		$(function(){
+		$('#buu').click(function(){
+			$.ajax({
+				"url":"__APP__/Home/Cart/check",
+				"type":"post",
+				"data":"pid="+idd,
+				"success":function(re){
+					if(re=='ok'){
+						alert('加入购物车成功');
+					}else{
+						alert('请先登陆您的账号');
+					}
+				}
+			});
+		});
+		});
+	</script>
+ </body>
+</html>
+ 

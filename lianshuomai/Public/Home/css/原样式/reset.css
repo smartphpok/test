@@ -1,0 +1,197 @@
+@charset "utf-8";
+/*-- The global style --*/
+  body, div, p, h1, h2, h3, h4, h5, h6, br, hr, 
+  ul, ol, li, dl, dt, dd, 
+  span, strong, b, bdo, blockquote, cite, code, del, dfn, em, i, ins, kbd, pre, q, samp, small, sub, sup,  
+  table, tr, th, td, caption, col, colgroup, tfoot, thead,
+  address, area, base, 
+  img, a, map, 
+  form, input, fieldset, button, label, leqend, optqroup, option, select, textarea, 
+  noscript, object, param, 
+  article, aside, audio, bdi, canvas, command, datalist, details, 
+  embed, figure, figcaption, footer, header, hgroup, keyqen, mark, menu, meter, 
+  output, proqress, rp, rt, ruby, section, source, summary, time, track, video {
+  margin: 0; 
+  padding: 0;
+  font-size: 100%;
+  font-family: Arial,"微软雅黑",sans-serif;
+  vertical-align: baseline;
+}
+*::-moz-selection {
+  color: #fff;
+  background: #193b6d;
+}
+*::selection {
+  color: #fff;
+  background: #193b6d;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+a { text-decoration: none; font-size:12px;
+   color:#888888;}
+em, i{ font-style: normal; }
+img { border:none; vertical-align: top; }
+ul, ol, li { list-style: none; }
+a { text-decoration: none; }
+small { font-size: 85%; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+input::-ms-clear { display: none; } /*-- 禁止IE10的小叉叉 --*/
+textarea { resize: none; overflow: auto; border-radius: 0; }
+table { border-collapse: collapse; }
+th { font-weight: normal; }
+button, input[type="reset"], input[type="button"], input[type="submit"] { line-height: normal; cursor: pointer; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; }
+
+/*-- 定位 --*/
+.ui-rel { position: relative; }
+.ui-ab { position: absolute; }
+.ui-fixed { position: fixed; }
+
+/*-- 浮动 --*/
+.ui-clear:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.ui-l { float: left; }
+.ui-r { float: right; }
+
+/*-- 文字同一行显示 --*/
+.ui-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*-- Box-sizing --*/
+.ui-box-size { -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+
+/*-- The image responsive --*/
+.ui-responsive img { max-width: 100%; }
+
+/*-- CSS 3 transition --*/
+.ui-transition { transition: all .3s ease-out; }
+
+/*-- The opacity background color --*/
+[class ^= "ui-opacity"] { position: absolute; top:0; right: 0; bottom: 0; left: 0; z-index: 0; transition: all .4s ease-out; }
+[class ^= "ui-opacity-white"] { background: #fff; }
+[class ^= "ui-opacity-black"] { background: #000; }
+[class ^= "ui-opacity-gray"] { background: #4d3a23; }
+.ui-opacity-white10,
+.ui-opacity-gray10,
+.ui-opacity-black10 { filter: alpha(opacity=10); opacity: .1; }
+.ui-opacity-white30,
+.ui-opacity-gray30,
+.ui-opacity-black30 { filter: alpha(opacity=30); opacity: .3; }
+.ui-opacity-white50,
+.ui-opacity-gray50,
+.ui-opacity-black50 { filter: alpha(opacity=50); opacity: .5; }
+.ui-opacity-white60,
+.ui-opacity-gray60,
+.ui-opacity-black60 { filter: alpha(opacity=60); opacity: .6; }
+.ui-opacity-white80,
+.ui-opacity-gray80,
+.ui-opacity-black80 { filter: alpha(opacity=80); opacity: .8; }
+.ui-opacity-white90,
+.ui-opacity-gray90,
+.ui-opacity-black90 { filter: alpha(opacity=90); opacity: .95; }
+
+
+@font-face {
+    font-family: 'giorgioregular';
+    src: url("giorgio-webfont.eot"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/giorgio-webfont.eot*/);
+    src: url("giorgio-webfont.eot-#iefix"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/giorgio-webfont.eot?#iefix*/) format('embedded-opentype'),
+         url("giorgio-webfont.woff"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/giorgio-webfont.woff*/) format('woff'),
+         url("giorgio-webfont.woff2"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/giorgio-webfont.woff2*/) format('woff2'),
+         url("giorgio-webfont.ttf"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/giorgio-webfont.ttf*/) format('truetype'),
+         url("giorgio-webfont.svg#giorgioregular"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/giorgio-webfont.svg#giorgioregular*/) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'a_yummy_apologyregular';
+    src: url("ayummyapology-webfont.eot"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/ayummyapology-webfont.eot*/);
+    src: url("ayummyapology-webfont.eot-#iefix"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/ayummyapology-webfont.eot?#iefix*/) format('embedded-opentype'),
+         url("ayummyapology-webfont.woff"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/ayummyapology-webfont.woff*/) format('woff'),
+         url("ayummyapology-webfont.woff2"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/ayummyapology-webfont.woff2*/) format('woff2'),
+         url("ayummyapology-webfont.ttf"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/ayummyapology-webfont.ttf*/) format('truetype'),
+         url("ayummyapology-webfont.svg#a_yummy_apologyregular"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/ayummyapology-webfont.svg#a_yummy_apologyregular*/) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arcticregular';
+    src: url("arc-webfont.eot"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/arc-webfont.eot*/);
+    src: url("arc-webfont.eot-#iefix"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/arc-webfont.eot?#iefix*/) format('embedded-opentype'),
+         url("arc-webfont.woff"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/arc-webfont.woff*/) format('woff'),
+         url("arc-webfont.woff2"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/arc-webfont.woff2*/) format('woff2'),
+         url("arc-webfont.ttf"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/arc-webfont.ttf*/) format('truetype'),
+         url("arc-webfont.svg#arcticregular"/*tpa=http://www.3pm-1tea.com/themes/3pm1tea/default/Style/fonts/arc-webfont.svg#arcticregular*/) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+ * Grid style
+ * version 20140616
+ * column numbar is eight
+ */
+
+.ui-grid { width: 1080px; margin: 0 auto; }
+.ui-row { margin: 0 -4px; }
+.ui-grid,
+.ui-row { -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+.ui-col1,
+.ui-col2,
+.ui-col25,
+.ui-col3,
+.ui-col4,
+.ui-col5,
+.ui-col6,
+.ui-col7,
+.ui-col8,
+.ui-col9,
+.ui-col10,
+.ui-col11,
+.ui-col12 { float: left; min-height: 1px; padding: 0 4px; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+
+.ui-col1:after,
+.ui-col2:after,
+.ui-col25:after,
+.ui-col3:after,
+.ui-col4:after,
+.ui-col5:after,
+.ui-col6:after,
+.ui-col7:after,
+.ui-col8:after,
+.ui-col9:after,
+.ui-col10:after,
+.ui-col11:after,
+.ui-col12:after,
+.ui-grid:after,
+.ui-row:after { content: " "; display: table; clear: both; visibility: hidden; height: 0; }
+
+.ui-col1 { width: 8.33333%; }
+.ui-col2 { width: 16.66666%; }
+.ui-col25 { width: 20%; }
+.ui-col3 { width: 25%; }
+.ui-col4 { width: 33.33333%; }
+.ui-col5 { width: 41.66666%;  }
+.ui-col6 { width: 50%; }
+.ui-col7 { width: 58.33333%; }
+.ui-col8 { width: 66.66666%; }
+.ui-col9 { width: 75%; }
+.ui-col10 { width: 83.33333%; }
+.ui-col11 { width: 91.66666%; }
+.ui-col12 { width: 100%; }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#main{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			.one{
+				width: 150px;
+				height:200px;
+				border: 1px solid #000000;
+				text-align: center;
+				float: left;
+				margin:50px 50px;
+			}
+			#bot{
+				display: block;
+				width: 80px;
+				height: 50px;
+				background: yellow;
+				text-align: center;
+				line-height: 50px;
+				margin: 0 auto;
+			}
+			#top{
+				height: 100px;
+				line-height: 160px;
+				
+			}
+			#page{
+				margin-top: 600px;
+			}
+			#goxx{
+				background-color: #3094EC;
+				width: 100px;
+				height: 30px;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 30px;
+			}
+		</style>
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/login.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/home.css" />
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/buycar.css" />
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/reset.css"/>
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/nav.css"/>
+	</head>
+	<body>
+		<include file="Public/Home/tpl/nav.html"/>
+<button></button>
+<div id="header">
+    <div class="add">
+      <div class="lf">
+        <a href="__APP__/Home/Index/index">
+          <img src="__PUBLIC__/Home/images/ls_logonew.png" alt=""/>
+        </a>
+        <span style="color: #3094EC;">商品列表</span>
+      </div>
+      <div class="ri_logo">
+        <ul>
+          <li><b></b>即买即卖</li>
+          <li><b></b>优质供货</li>
+          <li><b></b>最惠采购</li>
+        </ul>
+      </div>
+  </div>
+</div>
+  <!-- section -->
+  <div id="section">
+    <div>
+      <div class='sec_top'>
+        <ul>
+          <li><a href="__APP__/Home/Index/index">首页</a>&nbsp; </li>
+          <li>&nbsp;>
+          	<if condition="$_SESSION['username']">				
+          		<a href="__APP__/Home/Personal/index">&nbsp;&nbsp;个人中心</a>
+          	<else/>
+				<a href="__APP__/Home/Login/login">账号登陆</a>
+			</if>
+          	&nbsp;</li>
+        </ul>
+      </div>
+      <div class="sec_middle" id='plist'>
+        <ul>
+          <volist name="arr" id="v">
+            <li>
+              <img src="__PUBLIC__/{$v.pic}"/>
+              <h4>{$v.spname|mb_substr=0,15}</h4>
+              <h3>￥{$v.price}</h3>
+              <a href="#" class='addcart'><img src="__PUBLIC__/Home/images/rexiao.jpg"/></a>             
+              <div id="goxx">
+              	<a href="__URL__/spxx/pid/{$v.pid}" style="color:#fff;">商品详情</a>
+              </div>
+            </li>
+            
+          </volist>
+        </ul>
+        <ol class="pager">
+          {$pageStr}
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="zhe">
+    <div></div>
+    <div>
+      <h2></h2>
+      <span>&times;</span>
+    </div>
+  </div>
+  <include file='Public/Home/tpl/footer.html'/>
+	</body>
+	<script src="__PUBLIC__/Home/js/jquery-1.11.3.js"></script>
+	<script src="__PUBLIC__/Home/js/all.js"></script>
+ 	<script src="__PUBLIC__/Home/js/buycar.js"></script>
+</html>
+

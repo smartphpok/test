@@ -1,0 +1,717 @@
+ /*����ͨ����ʽ*/
+ a,body{
+   font-size:12px;
+   color:#888888;
+ }
+ #search,#big_nav,.main_top{
+   width:60%;
+   min-width:1200px;
+   margin:0 auto;
+ }
+ ul{
+   margin:0;
+ }
+ .rl{
+   float:right;
+ }
+ .lf{
+   float: left;
+ }
+ /*////////////////������ʽ����////////////////////*/
+  header{
+   width:100%;
+    min-width:1200px;
+   background:#F3F3F3;
+ }
+  #big_nav>ul>li{
+    float: left;
+    margin-right:20px;
+    padding:2px 0;
+    height:30px;
+    line-height: 30px;
+  }
+ #big_nav ul:last-child{
+   position:relative;
+     text-align: center;
+ }
+  #big_nav>ul:last-child>li:first-child a{
+    color:#F22E00;
+  }
+  #big_nav ul li b{
+    display:inline-block;
+    transition:transform 0.2s linear;
+    margin-left:5px;
+    width:10px;
+    height:6px;
+    background:url("/lianshuomai/Public/Home/images/icons.png")no-repeat -133px -198px;
+  }
+ #big_nav ul li:hover b{
+   transform: rotate(-180deg);
+ }
+ #big_nav>ul:last-child>li:nth-child(2){
+   border: 1px solid transparent;
+   border-bottom:0;
+   padding:0 8px;
+     line-height: 28px;
+
+ }
+ #big_nav>ul:last-child>li:nth-child(2):hover{
+   border-color: #ccc;
+ }
+ #big_nav>ul:last-child>li:last-child{
+   border-bottom: 0;
+ }
+  #big_nav>ul>li:not(:first-child):hover>a{
+    color:#FF6600;
+  }
+  /*�ҵ�������*/
+ #core{
+   text-align: center;
+   position:absolute;
+   border:1px solid #ccc;
+   top:31px;
+   left:80px;
+   width:81px;
+   padding:5px;
+   background: #fff;
+   box-shadow: 0px 0px 2px #ccc;
+   display:none;
+ }
+ #core ul li{
+   text-align: center;
+   padding:3px 0;
+   border-bottom: 1px solid #ccc;
+   height:25px;
+   line-height: 25px;
+ }
+ #core>ul>li:last-child{
+     border-bottom: 0;
+ }
+ #big_nav #my_list:hover div#core{
+   display: block;
+ }
+ #core a:hover{
+   color:#FF6600;
+ }
+ /*��������*/
+ #search{
+  height:64px;
+  padding:35px;
+ }
+ #search>div{
+  float:left;
+ }
+ #search>div.sear{
+   margin-top:10px;
+   margin-left: 40px;
+   position:relative;
+ }
+ #search>div>input{
+   height:32px;
+   width:500px;
+   float:left;
+   padding:0 5px;
+   border:2px solid #FF6600;
+ }
+ #search>div>button{
+   float:left;
+   height:36px;
+   width: 46px;
+   border:0;
+   background: url("/lianshuomai/Public/Home/images/homesearchbtn.jpg") no-repeat;
+ }
+ #search span.icon{
+   background-position: -1px -210px;
+   width: 30px;
+   height: 30px;
+   float: left;
+   margin: 5px 3px 5px 16px;
+ }
+ .icon_tel{
+   display: inline-block;
+   vertical-align: middle;
+   background: url('/lianshuomai/Public/Home/images/icons1.png')no-repeat;
+ }
+ #search>div.last{
+   background:#F9F9F9;
+   float:right;
+   margin-top:9px;
+ }
+ #search>div.last>div{
+   width:170px;
+   height:36px;
+   line-height:40px;
+   font-size:16px;
+   font-weight:bold;
+   color:#FF6600;
+ }
+ /**main���� */
+ #main{
+   width:100%;
+
+   background-image:linear-gradient(#fff,#F0F0F0) ;
+ }
+ #menu_list{
+   display: block;
+   background: #fff;
+   border:1px solid #f0f0f0;
+   position:absolute;
+   top:36px;
+   left:0px;
+ }
+ #menu_list>ul>li{
+   background:#fff;
+   width:538px;
+    border-bottom:1px solid #f0f0f0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   padding:5px;
+   
+ }
+ #menu_list>ul>li>span{
+   float:right;
+ }
+ /*������*/
+ .nav_kinds{
+   font-size: 16px;
+   float:left;
+   width: 240px;
+   cursor: pointer;
+ }
+ .nav_kinds>li{
+   color:#fff;
+ }
+ .nav_kinds>li{
+   background: #3094ed;
+   width:240px;
+   height:33px;
+   line-height: 35px;
+ }
+ .nav_kinds>li>i{
+   margin:7px 10px 0 10px;
+   vertical-align: top;
+   width: 20px;
+   height: 20px;
+   display: inline-block;
+   background:url("/lianshuomai/Public/Home/img/home_icons.png");
+ }
+.main_top>ul.lf>li{
+  float:left;
+  padding-left:45px;
+  height:33px;
+  line-height: 33px;
+}
+ .main_top>ul.lf>li>a{
+   font-size:16px;
+   color:#333333;
+ }
+ .main_top>ul.lf>li:first-child>a,
+ .main_top>ul.lf>li>a:hover{
+   color:#FF6600;
+   font-weight: bold;
+ }
+ /*�����ͳһ��ʽ*/
+ .same{
+   line-height: 19px;
+   padding: 5px 10px;
+   height: 19px;
+   width: 219px;
+   position:relative;
+ }
+ .menu_icon{
+   background:url(/lianshuomai/Public/Home/img/fp-lift.png) no-repeat;
+   width: 19px;
+   height: 19px;
+   display: block;
+   float: left;
+   margin-right: 6px;
+ }
+ .left_menu ol:hover dl b{
+   background-image: url(/lianshuomai/Public/Home/img/fp-lift_white.png);
+ }
+   /*����*/
+ ul.left_menu{
+   border:1px solid #DEDEDE;
+   padding:10px 0;
+ }
+ .icon1{
+   background-position: -7px -7px;
+ }
+ .icon2{
+   background-position: -40px -7px;
+ }
+ .icon3{
+   background-position: -7px -41px;
+ }
+ .icon4{
+   background-position: -40px -41px;
+ }
+ .icon5{
+   background-position: -7px -75px;
+ }
+ .icon6{
+   background-position: -40px -75px;
+ }
+ .icon7{
+   background-position: -7px -109px;
+ }
+ .icon8{
+   background-position: -40px -109px;
+ }
+ .icon9{
+   background-position: -7px -143px;
+ }
+ .icon10{
+   background-position: -40px -143px;
+ }
+ .icon11{
+   background-position: -7px -177px;
+ }
+ .icon12{
+   background-position: -40px -177px;
+ }
+ .icon13{
+   background-position: -7px -211px;
+ }
+ .icon14{
+   background-position: -40px -211px;
+ }
+ .icon15{
+   background-position: -7px -245px;
+ }
+ .icon16{
+   background-position: -40px -245px;
+ }
+
+ .left_menu ol dl,.left_menu ol dt,.left_menu ol dd{
+   float:left;
+ }
+ .left_menu ol:hover{
+   background:#3094ED;
+ }
+ .left_menu ol:hover>dl>a,.left_menu ol:hover dt b,.left_menu ol:hover>dd>a{
+   color:#fff;
+   border-color:#fff;
+ }
+ .left_menu ol dl {
+   width: 90px;
+ }
+ .left_menu ol dl a {
+   color: #000;
+   font-size: 15px;
+ }
+ .left_menu ol dd {
+   width: 50px;
+   line-height:20px;
+   font-size: 12px;
+ }
+ .left_menu ol dt b {
+   border-right: #000 1px solid;
+   height: 13px;
+   font-size: 0;
+   width: 0;
+   margin: 3px 8px;
+   display: block;
+ }
+ a:hover{
+   cursor: pointer;
+ }
+ .left_menu ol dt i {
+   background-position: -140px -260px;
+   background-image: url(/lianshuomai/Public/Home/images/icons.png)/*tpa=http://cdn.caozoo.net/cz88b/images/icons.png*/;
+   background-repeat: no-repeat;
+   width: 6px;
+   height: 10px;
+   display: block;
+   float: right;
+   margin: 5px 0 0 0;
+ }
+ .other_menu{
+   z-index:1000;
+   font-size:12px;
+   background: #fff;
+   width: 600px;
+   height: 476px;
+   padding:40px 25px;
+   box-sizing:border-box;
+   position: absolute;
+   left: 240px;
+   top: -11px;
+   border: 1px solid #dddddd;
+   border-top: none;
+   border-left: none;
+   display:none;
+ }
+ .other_menu em {
+   display: inline-block;
+   background: url(/lianshuomai/Public/Home/img/home_icons.png) /*tpa=http://cdn.caozoo.net/cz88b/imgs/home_icons.png*/;
+   width: 20px;
+   height: 20px;
+   background-position: -80px -2px;
+   background-repeat: no-repeat;
+ }
+ .other_menu .f1_le{
+   height:30px;
+   float:left;
+   padding-top:2px;
+ }
+ .other_menu .f1_ri{
+   border-bottom:1px solid #EEEEEE;
+   margin-left:62px;
+   margin-bottom: 15px;
+   height:50px;
+   box-sizing: border-box;
+ }
+ .other_menu .f1_ri>ul>li{
+   float:left;
+   padding:1px 5px;
+ }
+ .other_menu .f1_ri>ul{
+   width:450px;
+ }
+ .clear_he::after{
+   content:' ';
+   clear:both;
+   display:table;
+ }
+ .other_menu>p{
+   font-size:29px;
+   position:absolute;
+   right:15px;
+   top:20px;
+ }
+ /*�ֲ�*/
+ #banner_img{
+   width:724px;
+   margin:10px;
+ }
+ ul,li{
+   float:left;
+ }
+ #big_ban{
+   width:724px;
+   height: 340px;
+   overflow: hidden;
+   position:relative;
+ }
+ #banner{
+   position:relative;
+   top:0;
+   left:0;
+ }
+ #counts{
+   position:absolute;
+   bottom:20px;
+   left:350px;
+ }
+ #counts li{
+   width:10px;
+   height:10px;
+   border:1px solid transparent;
+   border-radius: 50%;
+   background: #fff;
+   color:#59466C;
+   font-weight:bold;
+   text-align: center;
+   margin-right:10px;
+ }
+ #counts li:hover,#counts li.hover{
+   background: #FFAA36;
+   cursor: pointer;
+ }
+ #banner_img>div.banner{
+   border:1px solid #DEDEDE;
+   border-right: 0;
+   border-top: 0;
+ }
+ #banner_img>div.banner>div{
+   border-right:1px solid #DEDEDE;
+ }
+ #banner_right{
+   height:474px;
+   width:211px;
+   float:left;
+   border:1px solid #DEDEDE;
+   margin-top:10px;
+ }
+ #banner_right>div.self div.link{
+   padding:10px 0px;
+   background: #3094EC;
+ }
+ #banner_right>div.self a{
+   display: inline-block;
+   padding:4px 31px;
+   color:#fff;
+ }
+ #banner_right>div.self a:first-child{
+   border-right: 1px solid #6FC1FF;
+
+ }
+ #banner_right>div.self>div:first-child{
+   padding:10px;
+ }
+ #banner_right>div.self i{
+   display: inline-block;
+   margin-right: 8px;
+   vertical-align: top;
+   width:11px ;
+   height:14px;
+   background:url("/lianshuomai/Public/Home/img/longinzctx.png") -5px -3px no-repeat;
+ }
+ #banner_right>div.self a:last-child i{
+   background-position: -25px -3px;
+ }
+ #banner_right>div.self img{
+   margin-right: 10px;
+ }
+ #banner_right>div.self b{
+  color:#000;
+   font-weight: normal;
+   margin: 7px 0;
+ }
+ #banner_right>div.news{
+   height:342px;
+ }
+ #banner_right>div.news>ul>li{
+   border-bottom: 1px solid #DCDCDC;
+ }
+ .active>a{
+   border-bottom: 1px solid #E37E26;
+   color:#000;
+ }
+ #banner_right>div.news>ul>li>a{
+   display: inline-block;
+   padding:10px 8px;
+ }
+ #banner_right>div.news ul{
+   position: relative;
+ }
+ #banner_right>div.news li div.news_list{
+   width: 210px;
+   height: 200px;
+   box-sizing:border-box;
+   position: absolute;
+   left: 8px;
+   top: 35px;
+   display: none;
+ }
+ #banner_right>div.news li:first-child div.news_list{
+   display: block;
+ }
+ div.news_list li{
+   margin:5px 0;
+ }
+ div.news_list li:hover a,.open a:hover{
+   color:#E37E26;
+ }
+ div.banner_bo div.ri_logo b {
+   margin-right: 10px;
+   margin-bottom: 10px;
+   display: inline-block;
+   vertical-align: bottom;
+   width: 45px;
+   height: 45px;
+   background: url("/lianshuomai/Public/Home/images/traiticon.png") 0 -45px no-repeat;
+ }
+ div.banner_bo div.ri_logo b.ic1{
+   background-position: -45px -45px;
+ }
+ div.banner_bo div.ri_logo b.ic2{
+   background-position: -90px  -45px;
+ }
+ div.banner_bo div.ri_logo li{
+   width:50px;
+   margin:9px 15px;
+   margin-right:0;
+ }
+ div.banner_bo{
+   background: #F8F8F8;
+   border-top:2px solid #E37E26;
+ }
+ div.open{
+   border:1px solid #DCDCDC;
+   border-right: 0;
+   border-left: 0;
+ }
+ div.open a{
+   display: inline-block;
+   width:103px;
+   font-size: 15px;
+   color: #353942;
+   height:40px;
+   text-align:center;
+   line-height: 40px;
+ }
+ div.open a:first-child{
+   border-right:1px solid #DCDCDC;
+ }
+ .banner_main .style1{
+   border:1px solid #DDDDDD;
+   border-top:2px solid #FF6600;
+   width:587px;
+   float:left;
+   height:350px;
+   margin-bottom: 20px;
+ }
+ .banner_main .style1_left{
+   width:198px;
+ }
+ .banner_main b{
+   height:22px;
+   line-height: 22px;
+   display:inline-block;
+   padding-left:10px;
+   margin:22px 0 22px 20px;
+   font-size: 20px;
+   border-left:3px solid #ff6600;
+ }
+ .style1_right {
+   width:350px;
+   margin-top:25px;
+   margin-left:30px;
+   float:left;
+ }
+ .style1_right>div>ul{
+   margin-bottom: 15px;
+ }
+ .style1_right>div.much>ul>li{
+   width:70px;
+ }
+ .bold>li:first-child a{
+   font-weight: bold;
+   color:#000;
+ }
+ .style1_right a{
+   color:#333333;
+ }
+ .last_much a{
+   color:#000;
+   padding-right:30px;
+   padding-top: 15px;
+   display:inline-block;
+ }
+ .much{
+   height:186px;
+ }
+ .last_much{
+   height:75px;
+ }
+.logo{
+  border-top:1px solid #DDD;
+  padding-top:10px;
+}
+ .logo img{
+   margin-right:14px;
+ }
+ .on a{
+   color:#ff6600;
+ }
+ .on1 a,.style1 li:hover a{
+   color:#ff6600;
+ }
+ .last_much1 li.on1,.last_much1 li:hover{
+   border-color:#ff6600;
+ }
+ .much1{
+   height:120px;
+ }
+ .much1 li{
+   width:70px;
+ }
+ .last_much1{
+   width:204px;
+   height:180px;
+   float:left;
+ }
+ .last_much1 li{
+   width:80px;
+   height:20px;
+   text-align: center;
+   line-height: 20px;
+   margin:10px 20px 5px 0;
+   border:1px solid #DDD;
+   border-radius: 10px;
+ }
+ .last_much1 li a{
+   display: inline-block;
+ }
+ .logo1{
+   width:100px;
+   margin-left:30px;
+ }
+ .logo1>img{
+   margin-bottom:20px;
+ }
+ .banner_main>div>div:first-child{
+   margin-right:20px;
+ }
+ /*�̶���λ����*/
+ #fix{
+   position:fixed;
+   width: 66px;
+   height: 297px;
+   box-shadow: 0px 0px 10px #ccc;
+   _position: absolute;
+   z-index: 999;
+   left: 50%;
+   top: 0;
+   margin-left: -671px;
+   margin-top: 184px;
+   opacity: 0;
+   transition: all 1s linear;
+ }
+ .fix_nav{
+   color: #fff;
+   background: #cdcdcd;
+   line-height: 20px;
+   borer-bottom: #c0c0c0 1px solid;
+   text-align: center;
+   font-family: "����";
+ }
+ #left-nav{
+   background: url("/lianshuomai/Public/Home/img/fp-lift.png")/*tpa=http://cdn.caozoo.net/cz88b/imgs/fp-lift.png*/ #fff;
+   width: 66px;
+   height: 272px;
+   margin-top: 5px;
+ }
+ #left-nav li>a{
+ display: inline-block;
+ width: 33px;
+ height: 34px;
+ overflow: hidden;
+ vertical-align:bottom;
+ }
+ #left-nav i{
+   display:none;
+ }
+ #left-nav li a:hover i,#left-nav li a.hover i {
+   display: block;
+   text-align: center;
+   color:#ff6600;
+   background: #fff;
+   line-height: 12px;
+   font-size: 12px;
+   padding: 4px 0 0 0;
+ }
+ #left-nav li a i.hover{
+   display: block;
+   text-align: center;
+   color:#ff6600;
+   background: #fff;
+   line-height: 12px;
+   font-size: 12px;
+   padding: 4px 0 0 0;
+ }
+ #nice{
+   width:100%;
+   text-align: center;
+ }
+ .banner_main{
+   /*position: absolute;*/
+   top: 660px;
+ }
+ .banner_main>.light{
+   height:373px;
+ }
+

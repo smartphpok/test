@@ -1,0 +1,63 @@
+user用户表结构:
+ create table user(
+ uid int key auto_increment,
+ username varchar(255) unique,
+ password varchar(255),
+ sex int,
+ realname varchar(255),
+ nick varchar(255),
+ phone varchar(255),
+ email varchar(255)
+ )default character set gbk;
+
+create table spxx(
+pid int key auto_increment,
+pic varchar(255),
+spname varchar(255),
+price varchar(255)
+)default character set gbk;
+insert spxx(pic,spname,price) value('Home/images/product/111.jpg','【3件7折】茵曼 2017夏装新款文艺T恤连','199');
+insert spxx(pic,spname,price) value('Home/images/product/222.jpg','微欧 连衣裙套装2017秋冬新品女装韩版','179');
+insert spxx(pic,spname,price) value('Home/images/product/333.jpg','诗凯蜜 连衣裙套装2017秋季新款时尚修','139');
+insert spxx(pic,spname,price) value('Home/images/product/444.jpg','美昂诗连衣裙2017秋季新品女装时尚气质','150');
+insert spxx(pic,spname,price) value('Home/images/product/555.jpg','JEANCOURCEL 连衣裙套装长袖2017秋季','128');
+insert spxx(pic,spname,price) value('Home/images/product/666.jpg','美黛香针织连衣裙2017秋新品套装女长袖','86');
+insert spxx(pic,spname,price) value('Home/images/product/777.jpg','可祺 2017秋季新款连衣裙套装时尚大码','139');
+insert spxx(pic,spname,price) value('Home/images/product/888.jpg','樱花飘针织连衣裙套装女长袖2017秋新款','169');
+insert spxx(pic,spname,price) value('Home/images/product/999.jpg','倩韵皙 连衣裙套装2017夏秋季新款A字裙','189');
+insert spxx(pic,spname,price) value('Home/images/product/10.jpg','仙丫 2017新款秋季女装打底裙韩版撞色','129');
+insert spxx(pic,spname,price) value('Home/images/product/11.jpg','玉琳琬连衣裙雪纺2017秋装新品女装韩版','188');
+insert spxx(pic,spname,price) value('Home/images/product/12.jpg','KFX潮牌时尚套装裙2017秋装新款女装马','429');
+insert spxx(pic,spname,price) value('Home/images/product/13.jpg','2017米加伦 春秋季新款连衣裙两件套装 ','119');
+insert spxx(pic,spname,price) value('Home/images/product/14.jpg','欧资雪纺连衣裙女装2017秋装新品韩版阔','288');
+insert spxx(pic,spname,price) value('Home/images/product/15.jpg','欧雀尼短袖连衣裙套装针织衫女2017新款','99');
+insert spxx(pic,spname,price) value('Home/images/product/16.jpg','韩可思 连衣裙套装2017夏秋季新款A字裙','599');
+
+create table buycart(
+bid int key auto_increment,
+cid int,
+pid int,
+count int
+)default character set gbk;
+
+create table cartid(
+cid int key auto_increment,
+uid int
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

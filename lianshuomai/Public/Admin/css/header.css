@@ -1,0 +1,19 @@
+#header{
+	background-color:#D6C6AD;
+	margin-bottom: 5px;
+	height: 100px;
+	line-height: 100px;
+}
+.logo{
+	padding-left: 300px;
+}
+.logo span{
+	font-size: 40px;
+}
+.title{
+	float: right;
+	padding-right: 1000px;
+}
+.logo img{
+	padding-top: 20px;
+}

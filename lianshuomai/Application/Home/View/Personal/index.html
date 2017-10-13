@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/home.css" />
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/login.css" />
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/reset.css"/>
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/nav.css"/>
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/nav.css"/>
+  <script src="__PUBLIC__/jquery/jquery-1.11.3.js"></script>
+ </head>
+ <body>
+  <!-- header -->
+  <include file="Public/Home/tpl/nav.html"/>
+  <!--<include file='Public/Home/tpl/.html'/>-->
+  <div id="header" class="clear">
+	   <div class="lf">
+	       <img src="__PUBLIC__/Home/images/ls_logonew.png" alt=""/>
+	       <span style="color: #3094EC;">个人中心</span>
+	   </div>
+	   <div class="ri_logo">
+		   <ul>
+		     <li><b></b>即买即卖</li>
+		     <li><b></b>优质供货</li>
+		     <li><b></b>最惠采购</li>
+		   </ul>
+	   </div>
+  </div>
+  <!-- section -->
+  <div id="section" class="clear">
+  	<div class="left">
+  		<div class="left-one">
+  			<h3><i></i><a href="javascript:;" target="show" style="color: #3094EC;">个人中心</a></h3>
+	  		<ul>
+	  			<li><a href="#" target="show">管理发货地址</a></li>
+	  			<li><a href="#" class='col' target="show">我的收藏夹</a></li>
+	  			<li><a href="#" target="show">我的代金券</a></li>
+	  		</ul>
+  		</div>
+  		<div class="left-two">
+  			<h3><i></i><a href="###" target="show" style="color: #3094EC;">必备工具</a></h3>
+	  		<ul>
+	  			<li><a href="#" target="show">手机APP</a></li>
+	  			<li><a href="#" target="show">主题换肤</a></li>
+	  			<li><a href="#" target="show">我要定制</a></li>
+	  		</ul>
+  		</div>
+  		<div class='left-three'>
+  			<h3><i></i><a href="###" target="show" style="color: #3094EC;">账号管理</a></h3>
+	  		<ul>
+	  			<li><a href="#" target="show">个人资料</a></li>
+	  			<li><a href="#" target="show">密码修改</a></li>
+	  			<li><a href="#" target="show">支付设置</a></li>
+	  			<li><a href="__APP__/Home/Index/index" style="color: #F22E00;">返回首页</a></li>
+	  		</ul>
+  		</div>
+  	</div>
+  	<div class="right">
+  		<div>
+  		  <iframe name="show" src="__APP__/Home/Cart/cart" id="show"></iframe>
+  		</div>
+  	</div>
+  </div>
+<div class="footer">
+	<include file="Public/Home/tpl/footer.html"/>
+</div>
+ </body>
+</html>
+ 

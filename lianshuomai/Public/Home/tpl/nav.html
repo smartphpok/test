@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/nav.css"/>
+	</head>
+	<body>
+		<div id="navv">
+			<div class="leftnav" id="leftone">连锁卖官网</div>
+			<if condition="$_SESSION['username']">
+				<div class="leftnav">{$_SESSION['username']}&nbsp;&nbsp;的连锁卖</div>
+			<else/>
+				<div class="leftnav">您好!&nbsp;&nbsp;欢迎来到连锁卖</div>
+			</if>
+			<div class="rightnav" id="rightone">
+				<if condition="$_SESSION['username']">
+					<a href="__APP__/Home/Login/loginout" style="width: 150px;">退出账号</a>				
+				<else/>
+					<a href="__APP__/Home/Login/login">登陆</a><div id="shu">&nbsp;|&nbsp;</div><a href="__APP__/Home/User/user">注册</a>
+				</if>
+			</div>
+			<div class="rightnav">
+				<a href="#">下载APP</a>
+			</div>
+			<div class="rightnav" id="lastone">
+				<a href="#">收藏连锁卖</a>
+			</div>
+		</div>
+	</body>
+</html>
